@@ -49,6 +49,17 @@ management:
     export:
       prometheus:
         enabled: true
+#---
+#this is edit for my sql docker server
+#spring:
+#  profiles: mysql
+#  datasource:
+#    schema: classpath*:db/mysql/schema.sql
+#    data: classpath*:db/mysql/data.sql
+#    url: jdbc:mysql://localhost:3306/petclinic?useSSL=false
+#    username: root
+#    password: petclinic
+#    initialization-mode: ALWAYS
 
 ---
 spring:
@@ -56,7 +67,7 @@ spring:
   datasource:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
-    url: jdbc:mysql://localhost:3306/petclinic?useSSL=false
+    url: jdbc:mysql://192.168.52.112:3306/petclinic?useSSL=false
     username: root
-    password: petclinic
+    password: admin123
     initialization-mode: ALWAYS
