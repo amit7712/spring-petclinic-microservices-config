@@ -1,6 +1,7 @@
 zuul:
   prefix: /api
   ignoredServices: '*'
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   routes:
     vets-service: /vet/**
     visits-service: /visit/**
